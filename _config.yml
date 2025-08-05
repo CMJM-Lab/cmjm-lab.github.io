@@ -1,0 +1,31 @@
+# Website configuration
+
+# Site settings
+title: "CMJM-Lab"
+description: "Welcome to our Computational Multidata Junction in Medicine Lab @ National Taiwan University"
+baseurl: "" # Leave empty for GitHub Pages
+url: "https://cmjm-lab.github.io/" # Replace with your GitHub Pages URL
+
+theme: minima
+
+# Navigation
+nav:
+  - name: Home
+    link: /
+  - name: Research
+    link: /research
+  - name: People
+    link: /people
+  # - name: CV
+  #   link: /CV    
+  - name: Publications
+    link: /publications
+
+# Theme
+# You can use a Jekyll theme or customize your own
+# theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
