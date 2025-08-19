@@ -23,16 +23,16 @@
     - title: "Personal Website"
       url: "https://ginger.com"
 
-- name: "John Smith"
+- name: "Shongwe Njabulo Sinethemba"
   role: "Master's Student"
   affiliation: "Smart Medicine and Health Informatics Master's Program, National Taiwan University"
-  image: "/assets/img/people/m.png"
-  intro: "John is a Master's student researching ceRNA networks and machine learning applications in oncology."
+  image: "/assets/img/people/nj.png"
+  intro: "Njabulo (NJ) is a Master's student in the CMJM Lab. His previous research was based on image data hiding(steganography), and his current research is on Spatial Omics."
   links:
     - title: "GitHub"
-      url: "https://github.com/johnsmith"
-    - title: "Personal Website"
-      url: "https://johnsmith.com"
+      url: "https://github.com/njabuloshong1"
+    - title: "Google Scholar"
+      url: "https://scholar.google.com/citations?user=ram5KqUAAAAJ&hl=en"
 
 - name: "John Smith"
   role: "Master's Student"
