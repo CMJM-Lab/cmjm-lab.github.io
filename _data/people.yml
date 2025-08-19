@@ -15,7 +15,7 @@
 - name: "Ginger"
   role: "Project Assistant"
   affiliation: "CMJM Lab, National Taiwan University"
-  image: "/assets/img/people/f.png"
+  image: "/assets/img/people/Ginger.jpg"
   intro: "Ginger is a Project Assistant at CMJM Lab, supporting various research initiatives."
   links:
     - title: "GitHub"
