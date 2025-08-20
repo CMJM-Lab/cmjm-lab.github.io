@@ -36,16 +36,16 @@
     - title: "Google Scholar"
       url: "https://scholar.google.com/citations?user=ram5KqUAAAAJ&hl=en"
 
-- name: "John Smith"
+- name: "Gustavo Castro-Wu (吳萬成)"
   role: "Master's Student"
   affiliation: "Smart Medicine and Health Informatics Master's Program, National Taiwan University"
-  image: "/assets/img/people/m.png"
-  intro: "John is a Master's student researching ceRNA networks and machine learning applications in oncology."
+  image: "/assets/img/people/gustavo.png"
+  intro: "Gustavo (吳萬成) is a Master's student in the CMJM Lab researching neoantigen prediction in NSCLC using scRNA-seq for the improvement of targetted immunotherapies."
   links:
     - title: "GitHub"
-      url: "https://github.com/johnsmith"
-    - title: "Personal Website"
-      url: "https://johnsmith.com"
+      url: "https://github.com/FortuneEXE"
+    - title: "LinkedIn"
+      url: "https://www.linkedin.com/in/gcwu"
 
 - name: "Nancy"
   role: "Master's Student"
