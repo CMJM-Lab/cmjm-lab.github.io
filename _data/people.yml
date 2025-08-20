@@ -11,12 +11,14 @@
     - title: "LinkedIn"
       url: "https://www.linkedin.com/in/meijumaychen/"
     
-
 - name: "Ginger"
   role: "Project Assistant"
   affiliation: "CMJM Lab, National Taiwan University"
   image: "/assets/img/people/Ginger.png"
   intro: "Ginger is a Project Assistant at CMJM Lab, supporting various research initiatives."
+  email: "happyginger88@gmail.com"
+  contact_number: "02336629"
+  address: "Room 507, No.81, Changxing Street, Da'an District, Taipei City 106"
   links:
     - title: "GitHub"
       url: "https://github.com/ginger"
