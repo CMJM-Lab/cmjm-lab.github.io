@@ -39,7 +39,7 @@
 - name: "Gustavo Castro-Wu (吳萬成)"
   role: "Master's Student"
   affiliation: "Smart Medicine and Health Informatics Master's Program, National Taiwan University"
-  image: "/assets/img/people/gustavo.png"
+  image: "/assets/img/people/gustavo.jpg"
   intro: "Gustavo (吳萬成) is a Master's student in the CMJM Lab researching neoantigen prediction in NSCLC using scRNA-seq for the improvement of targetted immunotherapies."
   links:
     - title: "GitHub"
