@@ -4,26 +4,12 @@
   image: "/assets/img/people/MJMC.png"
   intro: "Dr. Chen leads the CMJM Lab, focusing on bioinformatics and precision medicine."
   links:
-    # - title: "CV"
-    #   url: "/CV.html"
+    - title: "CV"
+      url: "https://cmjm.faculty.bio/"
     - title: "Google Scholar"
       url: "https://scholar.google.com/citations?user=B9Dm9FkAAAAJ&hl=en"
     - title: "LinkedIn"
       url: "https://www.linkedin.com/in/meijumaychen/"
-    
-- name: "Ginger"
-  role: "Project Assistant"
-  affiliation: "CMJM Lab, National Taiwan University"
-  image: "/assets/img/people/Ginger.png"
-  intro: "Ginger is a Project Assistant at CMJM Lab, supporting various research initiatives."
-  email: "happyginger88@gmail.com"
-  contact_number: "02336629"
-  address: "Room 507, No.81, Changxing Street, Da'an District, Taipei City 106"
-  links:
-    - title: "GitHub"
-      url: "https://github.com/ginger"
-    - title: "Personal Website"
-      url: "https://ginger.com"
 
 - name: "Shongwe Njabulo Sinethemba"
   role: "Master's Student"
