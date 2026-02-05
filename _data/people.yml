@@ -43,3 +43,9 @@
       url: "https://github.com/johnsmith"
     - title: "Personal Website"
       url: "https://johnsmith.com"
+      
+- name: "Sharon Li (李品萱)"
+  role: "Research Assistant"
+  affiliation: "Smart Medicine and Health Informatics Master's Program, National Taiwan University"
+  image: "/assets/img/people/m.png"
+ 
