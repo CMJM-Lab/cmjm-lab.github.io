@@ -261,9 +261,9 @@ img {
   display: inline;
 }
 
-/* Color the letters C, M, J, M in red */
+/* Color the letters C, M, J, M in orange */
 .navbar-text-red {
-  color: var(--color-red);
+  color: var(--color-orange);
 }
 
 .navbar-text-white {
