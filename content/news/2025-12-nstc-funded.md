@@ -4,4 +4,4 @@ date: 2025-12-03
 tags: ["Funding", "AI", "Research"]
 ---
 
-We are excited to announce that our AI research project has been funded by the National Science and Technology Council (NSTC). This grant will support our continued work in developing artificial intelligence applications for biomedical research, including AI-driven multiomics integration and tool development for precision medicine.
+We are excited to announce that our crisis-aware medical AI project has been funded by the National Science and Technology Council (NSTC). Learn more [here](https://www.twaicoe.org/crisis-aware-medical-ai-from-foundational-intelligence-to-lightweight-deployment-en).
