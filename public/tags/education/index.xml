@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Education on CMJM Lab</title>
+    <link>http://localhost:1313/tags/education/</link>
+    <description>Recent content in Education on CMJM Lab</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Now Accepting Applications: Smart Medicine and Health Informatics Master&#39;s Program</title>
+      <link>http://localhost:1313/news/2025-02-masters-program/</link>
+      <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/2025-02-masters-program/</guid>
+      <description>&lt;p&gt;The Smart Medicine and Health Informatics Master&amp;rsquo;s Program at National Taiwan University is now accepting applications. This international program offers advanced studies in bioinformatics, computational medicine, and precision health. We welcome motivated students from diverse backgrounds to join our lab and contribute to cutting-edge research at the intersection of AI and medicine.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on CMJM Lab</title>
+    <link>http://localhost:1313/tags/research/</link>
+    <description>Recent content in Research on CMJM Lab</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NSTC AI Research Project Funded</title>
+      <link>http://localhost:1313/news/2025-12-nstc-funded/</link>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/2025-12-nstc-funded/</guid>
+      <description>&lt;p&gt;We are excited to announce that our AI research project has been funded by the National Science and Technology Council (NSTC). This grant will support our continued work in developing artificial intelligence applications for biomedical research, including AI-driven multiomics integration and tool development for precision medicine.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -5,6 +5,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | CMJM Lab</title>
+  <meta name="description" content="Computational Multidata Junction in Medicine Lab @ National Taiwan University" />
+  <meta name="author" content="Dr. Mei-Ju May Chen" />
+
+  
+  <meta property="og:title" content="Home | CMJM Lab" />
+  <meta property="og:description" content="Computational Multidata Junction in Medicine Lab @ National Taiwan University" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:1313/" />
+  <meta property="og:site_name" content="CMJM Lab" />
+
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Home | CMJM Lab" />
+  <meta name="twitter:description" content="Computational Multidata Junction in Medicine Lab @ National Taiwan University" />
+
+  
+  <link rel="canonical" href="http://localhost:1313/" />
+  <meta name="robots" content="index, follow" />
+
   
   <link rel="stylesheet" href="/css/main.min.css" />
 </head>
@@ -19,11 +38,11 @@
         </span>
       </a>
 
-      <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+      <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbar-menu">
         &#9776;
       </button>
 
-      <ul class="navbar-menu" id="navbar-menu">
+      <ul class="navbar-menu" id="navbar-menu" role="navigation">
         
         <li class="navbar-item active">
           <a href="/">Home</a>
@@ -71,6 +90,8 @@
     if (toggle && menu) {
       toggle.addEventListener('click', function() {
         menu.classList.toggle('active');
+        var expanded = menu.classList.contains('active');
+        toggle.setAttribute('aria-expanded', expanded);
       });
 
       
@@ -92,12 +113,13 @@
   });
 </script>
 
-  
+  <main>
+    
 <section class="hero">
   <div class="container">
     <div class="hero-content">
       <h1>
-        <em>C</em>omputational <em>M</em>ultidata <em>J</em>unction in <em>M</em>edicine
+        <span class="accent-orange">C</span>omputational <span class="accent-orange">M</span>ultidata <span class="accent-orange">J</span>unction in <span class="accent-orange">M</span>edicine
       </h1>
       <p>Advancing precision medicine through integrated data science and computational analysis</p>
       <div class="flex gap-2 justify-center">
@@ -107,8 +129,8 @@
     </div>
   </div>
   <div class="container mt-4">
-    <div class="hero-visual" style="background-color: #f0f2f5; height: 300px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #6c757d;">
-      <img src="/img/home/summary.png" alt="Lab Summary" style="max-width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+    <div class="hero-visual">
+      <img src="/img/home/summary.png" alt="CMJM Lab — Computational Multidata Junction in Medicine at National Taiwan University" loading="lazy">
     </div>
   </div>
 </section>
@@ -117,7 +139,7 @@
   <div class="container">
     <div class="stats-container">
       <div class="stat">
-        <span class="stat-number">25+</span>
+        <span class="stat-number">31+</span>
         <span class="stat-label">Publications</span>
       </div>
       <div class="stat">
@@ -125,7 +147,7 @@
         <span class="stat-label">Research Areas</span>
       </div>
       <div class="stat">
-        <span class="stat-number">10+</span>
+        <span class="stat-number">5+</span>
         <span class="stat-label">Team Members</span>
       </div>
       <div class="stat">
@@ -210,44 +232,39 @@
       
       <article class="news-card">
         <div class="news-content">
-          <span class="news-date">Dec 3, 2025</span>
-          <h3><a href="http://localhost:1313/news/2025-12-nstc-funded/">NSTC AI Project Funded!</a></h3>
-          <p><p>We are excited to announce that our AI research project has been funded by the National Science and Technology Council (NSTC). This funding will support our continued work in artificial intelligence applications for biomedical research.</p></p>
+          <time datetime="2025-12-03" class="news-date">Dec 3, 2025</time>
+          <h3><a href="http://localhost:1313/news/2025-12-nstc-funded/">NSTC AI Research Project Funded</a></h3>
+          <p><p>We are excited to announce that our AI research project has been funded by the National Science and Technology Council (NSTC). This grant will support our continued work in developing artificial intelligence applications for biomedical research, including AI-driven multiomics integration and tool development for precision medicine.</p></p>
           <a href="http://localhost:1313/news/2025-12-nstc-funded/" class="news-link">Read More →</a>
         </div>
       </article>
       
       <article class="news-card">
         <div class="news-content">
-          <span class="news-date">Aug 1, 2025</span>
-          <h3><a href="http://localhost:1313/news/2025-08-website-launched/">Lab website launched!</a></h3>
-          <p><p>Welcome to the new CMJM Lab website! We have launched our updated website with information about our research, publications, and team members. Visit us to learn more about our work in computational biology and precision medicine.</p></p>
+          <time datetime="2025-08-01" class="news-date">Aug 1, 2025</time>
+          <h3><a href="http://localhost:1313/news/2025-08-website-launched/">CMJM Lab Website Launched</a></h3>
+          <p><p>Welcome to the new CMJM Lab website! Our site provides comprehensive information about our research in computational multidata analysis in medicine, team members, publications, and open-source software tools. Stay tuned for updates on our latest research and opportunities to join the team.</p></p>
           <a href="http://localhost:1313/news/2025-08-website-launched/" class="news-link">Read More →</a>
         </div>
       </article>
       
       <article class="news-card">
         <div class="news-content">
-          <span class="news-date">Jul 1, 2025</span>
-          <h3><a href="http://localhost:1313/news/2025-07-blood-cancer-discovery/">New publication in Blood Cancer Discov.</a></h3>
-          <p><p>We are pleased to announce our new publication in Blood Cancer Discovery. This work continues our efforts to advance understanding of cancer biology through computational approaches.</p></p>
+          <time datetime="2025-07-01" class="news-date">Jul 1, 2025</time>
+          <h3><a href="http://localhost:1313/news/2025-07-blood-cancer-discovery/">New Publication in Blood Cancer Discovery</a></h3>
+          <p><p>We are pleased to announce our new publication in <em>Blood Cancer Discovery</em>. This work continues our efforts to advance understanding of hematological malignancies through computational approaches, contributing novel insights into blood cancer biology and potential therapeutic strategies.</p></p>
           <a href="http://localhost:1313/news/2025-07-blood-cancer-discovery/" class="news-link">Read More →</a>
         </div>
       </article>
       
     </div>
-    <div style="text-align: center; margin-top: var(--spacing-lg);">
+    <div class="text-center mt-4">
       <a href="/news/" class="btn btn-outline">View All News →</a>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    
-  </div>
-</section>
-
+  </main>
   <footer class="site-footer">
   <div class="container">
     <div class="footer-content">
@@ -287,24 +304,30 @@
       <div class="footer-section">
         <h3>Contact</h3>
         
-        <p>
-          <a href="mailto:mjmchen@g.ntu.edu.tw" style="color: rgba(255, 255, 255, 0.7);">
-            mjmchen@g.ntu.edu.tw
-          </a>
-        </p>
+        <p><a href="#" id="ep-ff7446b6" class="footer-email">Get in Touch</a>
+<script>
+(function(){var c=[109,106,109,99,104,101,110,64,103,46,110,116,117,46,101,100,117,46,116,119],s='';for(var i=0;i<c.length;i++)s+=String.fromCharCode(c[i]);document.getElementById('ep-ff7446b6').href='ma'+'il'+'to:'+s;})();
+</script></p>
         
         <div class="footer-social">
           
-          <a href="https://github.com/https://github.com/CMJM-Lab" title="GitHub" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/CMJM-Lab" title="GitHub" target="_blank" rel="noopener noreferrer">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
             </svg>
           </a>
           
           
-          <a href="https://scholar.google.com/citations?user=https%3a%2f%2fscholar.google.com%2fcitations%3fuser%3dB9Dm9FkAAAAJ%26hl%3den" title="Google Scholar" target="_blank" rel="noopener noreferrer">
+          <a href="https://scholar.google.com/citations?user=B9Dm9FkAAAAJ&amp;hl=en" title="Google Scholar" target="_blank" rel="noopener noreferrer">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 3c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm6 12.5c0-2.485-2.686-4.5-6-4.5s-6 2.015-6 4.5V18h12v-2.5z"/>
+            </svg>
+          </a>
+          
+          
+          <a href="https://www.linkedin.com/in/meijumaychen/" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
             </svg>
           </a>
           
@@ -318,5 +341,23 @@
   </div>
 </footer>
 
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">&#8593;</button>
+  <script>
+    (function() {
+      var btn = document.getElementById('back-to-top');
+      if (!btn) return;
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 400) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+      });
+      btn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
 </body>
 </html>

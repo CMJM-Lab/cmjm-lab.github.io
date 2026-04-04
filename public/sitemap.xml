@@ -12,6 +12,12 @@
   </url><url>
     <loc>http://localhost:1313/people/sharon-li/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/ai/</loc>
+    <lastmod>2025-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/funding/</loc>
+    <lastmod>2025-12-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-12-03T00:00:00+00:00</lastmod>
   </url><url>
@@ -21,16 +27,46 @@
     <loc>http://localhost:1313/news/2025-12-nstc-funded/</loc>
     <lastmod>2025-12-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/research/</loc>
+    <lastmod>2025-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-12-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/news/2025-08-website-launched/</loc>
     <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/lab-news/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cancer-biology/</loc>
+    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/computational-biology/</loc>
+    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/news/2025-07-blood-cancer-discovery/</loc>
     <lastmod>2025-07-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/publication/</loc>
+    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cancer-genomics/</loc>
+    <lastmod>2025-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/multi-omics/</loc>
+    <lastmod>2025-02-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/news/2025-02-science-advances/</loc>
     <lastmod>2025-02-19T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/education/</loc>
+    <lastmod>2025-02-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/news/2025-02-masters-program/</loc>
+    <lastmod>2025-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/recruitment/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/alumni/</loc>
@@ -48,7 +84,5 @@
     <loc>http://localhost:1313/research/</loc>
   </url><url>
     <loc>http://localhost:1313/software/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

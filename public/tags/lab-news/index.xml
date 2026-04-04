@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lab News on CMJM Lab</title>
+    <link>http://localhost:1313/tags/lab-news/</link>
+    <description>Recent content in Lab News on CMJM Lab</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/lab-news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CMJM Lab Website Launched</title>
+      <link>http://localhost:1313/news/2025-08-website-launched/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/2025-08-website-launched/</guid>
+      <description>&lt;p&gt;Welcome to the new CMJM Lab website! Our site provides comprehensive information about our research in computational multidata analysis in medicine, team members, publications, and open-source software tools. Stay tuned for updates on our latest research and opportunities to join the team.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
