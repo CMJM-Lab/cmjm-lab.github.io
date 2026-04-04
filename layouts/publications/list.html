@@ -18,10 +18,10 @@
     </div>
 
     <div class="publication-list" id="publications-list">
-      {{ if hugo.Data.publications_leading }}
+      {{ if .Site.Data.publications_leading }}
       <div class="publication-section" data-type="first-author">
         <h3 class="section-label">Leading Author Publications</h3>
-        {{ range hugo.Data.publications_leading }}
+        {{ range .Site.Data.publications_leading }}
         <div class="publication-item">
           {{ if .year }}<span class="publication-year">{{ .year }}</span>{{ end }}
           <div class="publication-info">
@@ -36,10 +36,10 @@
       </div>
       {{ end }}
 
-      {{ if hugo.Data.publications_coauthor }}
+      {{ if .Site.Data.publications_coauthor }}
       <div class="publication-section" data-type="collaborative">
         <h3 class="section-label mt-4">Collaborative Publications</h3>
-        {{ range hugo.Data.publications_coauthor }}
+        {{ range .Site.Data.publications_coauthor }}
         <div class="publication-item">
           {{ if .year }}<span class="publication-year">{{ .year }}</span>{{ end }}
           <div class="publication-info">
@@ -53,10 +53,10 @@
       </div>
       {{ end }}
 
-      {{ if hugo.Data.publications_books }}
+      {{ if .Site.Data.publications_books }}
       <div class="publication-section" data-type="book-chapters">
         <h3 class="section-label mt-4">Book Chapters</h3>
-        {{ range hugo.Data.publications_books }}
+        {{ range .Site.Data.publications_books }}
         <div class="publication-item">
           {{ if .year }}<span class="publication-year">{{ .year }}</span>{{ end }}
           <div class="publication-info">
@@ -70,10 +70,10 @@
       </div>
       {{ end }}
 
-      {{ if hugo.Data.publications_theses }}
+      {{ if .Site.Data.publications_theses }}
       <div class="publication-section" data-type="theses">
         <h3 class="section-label mt-4">Theses &amp; Dissertations</h3>
-        {{ range hugo.Data.publications_theses }}
+        {{ range .Site.Data.publications_theses }}
         <div class="publication-item">
           {{ if .year }}<span class="publication-year">{{ .year }}</span>{{ end }}
           <div class="publication-info">

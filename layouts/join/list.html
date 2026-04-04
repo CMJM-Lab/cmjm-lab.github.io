@@ -10,7 +10,7 @@
   <div class="container">
     <h2 class="text-center">Open Positions</h2>
     <div class="position-cards">
-      {{ range hugo.Data.positions }}
+      {{ range .Site.Data.positions }}
       <div class="position-card">
         <h3>{{ .title }}</h3>
         <span class="position-type">{{ .status }}</span>

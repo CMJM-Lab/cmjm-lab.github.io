@@ -11,7 +11,7 @@
 <section class="section">
   <div class="container">
     <div class="software-grid">
-      {{ range hugo.Data.software }}
+      {{ range .Site.Data.software }}
       <div class="software-card">
         {{ if .icon }}<div class="software-icon">{{ .icon }}</div>{{ end }}
         <h3>{{ .name }}</h3>

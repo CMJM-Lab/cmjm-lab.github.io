@@ -23,11 +23,11 @@
   <div class="container">
     <div class="stats-container">
       <div class="stat">
-        <span class="stat-number">{{ add (len hugo.Data.publications_leading) (len hugo.Data.publications_coauthor) }}+</span>
+        <span class="stat-number">{{ add (len .Site.Data.publications_leading) (len .Site.Data.publications_coauthor) }}+</span>
         <span class="stat-label">Publications</span>
       </div>
       <div class="stat">
-        <span class="stat-number">{{ len hugo.Data.research }}</span>
+        <span class="stat-number">{{ len .Site.Data.research }}</span>
         <span class="stat-label">Research Areas</span>
       </div>
       <div class="stat">
@@ -35,7 +35,7 @@
         <span class="stat-label">Team Members</span>
       </div>
       <div class="stat">
-        <span class="stat-number">{{ len hugo.Data.software }}</span>
+        <span class="stat-number">{{ len .Site.Data.software }}</span>
         <span class="stat-label">Open-Source Tools</span>
       </div>
     </div>
@@ -46,7 +46,7 @@
   <div class="container">
     <h2 class="text-center">Research Highlights</h2>
     <div class="research-grid">
-      {{ range $index, $item := hugo.Data.research }}
+      {{ range $index, $item := .Site.Data.research }}
       <div class="research-card {{ if eq (mod $index 2) 1 }}accent-orange{{ end }}">
         <div class="research-card-image" {{ if $item.image }}style="background-image: url('{{ $item.image }}'); background-size: contain; background-position: center; background-repeat: no-repeat;"{{ end }}></div>
         <div class="research-card-content">
