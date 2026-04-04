@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>People | CMJM Lab</title>
+  
+  <link rel="stylesheet" href="/css/main.min.css" />
+</head>
+<body>
+  <nav class="site-nav">
+  <div class="container">
+    <div class="navbar">
+      <a href="http://localhost:1313/" class="navbar-brand">
+        <span class="navbar-dot"></span>
+        <span class="navbar-text">
+          <span class="navbar-text-red">C</span><span class="navbar-text-red">M</span><span class="navbar-text-red">J</span><span class="navbar-text-red">M</span><span class="navbar-text-white"> Lab</span>
+        </span>
+      </a>
+
+      <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+
+      <ul class="navbar-menu" id="navbar-menu">
+        
+        <li class="navbar-item ">
+          <a href="/">Home</a>
+        </li>
+        
+        <li class="navbar-item ">
+          <a href="/research/">Research</a>
+        </li>
+        
+        <li class="navbar-item active">
+          <a href="/people/">People</a>
+        </li>
+        
+        <li class="navbar-item ">
+          <a href="/publications/">Publications</a>
+        </li>
+        
+        <li class="navbar-item ">
+          <a href="/software/">Software</a>
+        </li>
+        
+        <li class="navbar-item ">
+          <a href="/news/">News</a>
+        </li>
+        
+        <li class="navbar-item ">
+          <a href="/join/">Join Us</a>
+        </li>
+        
+        <li class="navbar-item ">
+          <a href="/contact/">Contact</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.getElementById('navbar-toggle');
+    const menu = document.getElementById('navbar-menu');
+
+    if (toggle && menu) {
+      toggle.addEventListener('click', function() {
+        menu.classList.toggle('active');
+      });
+
+      
+      const menuLinks = menu.querySelectorAll('a');
+      menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          menu.classList.remove('active');
+        });
+      });
+
+      
+      document.addEventListener('click', function(event) {
+        const isClickInsideNav = toggle.contains(event.target) || menu.contains(event.target);
+        if (!isClickInsideNav && menu.classList.contains('active')) {
+          menu.classList.remove('active');
+        }
+      });
+    }
+  });
+</script>
+
+  
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>People</h1>
+      <p>Meet our diverse, international team</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-label">Principal Investigator</h2>
+    
+    <div class="featured-pi">
+      
+      <div class="featured-pi-avatar" style="background-image: url('/img/people/MJMC.png'); background-size: cover; background-position: center;"></div>
+      
+      <div class="featured-pi-content">
+        <h2>Dr. Mei-Ju May Chen</h2>
+        <p class="featured-pi-title">Principal Investigator</p>
+        <p style="color: var(--color-gray-600);">Assistant Professor, Smart Medicine and Health Informatics Master&#39;s Program, National Taiwan University</p>
+        <p>Dr. Chen leads the CMJM Lab, focusing on bioinformatics and precision medicine.</p>
+        
+        <div style="display: flex; gap: 8px; margin-top: var(--spacing-md); flex-wrap: wrap;">
+          
+          <a href="https://cmjm.faculty.bio/" class="btn btn-outline" target="_blank" rel="noopener" style="font-size: 0.85rem; padding: 6px 16px;">CV</a>
+          
+          <a href="https://scholar.google.com/citations?user=B9Dm9FkAAAAJ&amp;hl=en" class="btn btn-outline" target="_blank" rel="noopener" style="font-size: 0.85rem; padding: 6px 16px;">Google Scholar</a>
+          
+          <a href="https://www.linkedin.com/in/meijumaychen/" class="btn btn-outline" target="_blank" rel="noopener" style="font-size: 0.85rem; padding: 6px 16px;">LinkedIn</a>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <h2 class="section-label">Graduate Students</h2>
+    <div class="people-grid">
+      
+      
+      
+      
+      <div class="person-card">
+        
+        <div class="person-avatar" style="background-image: url('/img/people/nj.png'); background-size: cover; background-position: center; color: transparent;">.</div>
+        
+        <p class="person-name">Shongwe Njabulo Sinethemba</p>
+        <p class="person-title">Master&#39;s Student</p>
+        <p class="person-bio">Njabulo (NJ) is a Master&#39;s student in the CMJM Lab. His previous research was based on image data hiding(steganography), and his current research is on Spatial Omics.</p>
+        
+        <div style="margin-top: var(--spacing-sm); display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+          
+          <a href="https://github.com/njabuloshong1" target="_blank" rel="noopener" style="font-size: 0.85rem; padding: 4px 10px; background: var(--color-gray-100); border-radius: 20px; color: var(--color-gray-600);">GitHub</a>
+          
+          <a href="https://scholar.google.com/citations?user=ram5KqUAAAAJ&amp;hl=en" target="_blank" rel="noopener" style="font-size: 0.85rem; padding: 4px 10px; background: var(--color-gray-100); border-radius: 20px; color: var(--color-gray-600);">Google Scholar</a>
+          
+        </div>
+        
+      </div>
+      
+      
+      
+      <div class="person-card">
+        
+        <div class="person-avatar" style="background-image: url('/img/people/gustavo.jpg'); background-size: cover; background-position: center; color: transparent;">.</div>
+        
+        <p class="person-name">Gustavo Castro-Wu (吳萬成)</p>
+        <p class="person-title">Master&#39;s Student</p>
+        <p class="person-bio">Gustavo (吳萬成) is a Master&#39;s student in the CMJM Lab researching neoantigen prediction in NSCLC using scRNA-seq for the improvement of targetted immunotherapies.</p>
+        
+        <div style="margin-top: var(--spacing-sm); display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+          
+          <a href="https://github.com/FortuneEXE" target="_blank" rel="noopener" style="font-size: 0.85rem; padding: 4px 10px; background: var(--color-gray-100); border-radius: 20px; color: var(--color-gray-600);">GitHub</a>
+          
+          <a href="https://www.linkedin.com/in/gcwu" target="_blank" rel="noopener" style="font-size: 0.85rem; padding: 4px 10px; background: var(--color-gray-100); border-radius: 20px; color: var(--color-gray-600);">LinkedIn</a>
+          
+        </div>
+        
+      </div>
+      
+      
+      
+      <div class="person-card">
+        
+        <div class="person-avatar" style="background-image: url('/img/people/nancy.png'); background-size: cover; background-position: center; color: transparent;">.</div>
+        
+        <p class="person-name">Nancy Arya</p>
+        <p class="person-title">Master&#39;s Student</p>
+        <p class="person-bio">Nancy is a Master&#39;s student in the CMJM Lab researching multiomics and machine learning applications in oncology.</p>
+        
+        <div style="margin-top: var(--spacing-sm); display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+          
+          <a href="https://github.com/Nancy13-ui" target="_blank" rel="noopener" style="font-size: 0.85rem; padding: 4px 10px; background: var(--color-gray-100); border-radius: 20px; color: var(--color-gray-600);">GitHub</a>
+          
+          <a href="https://www.linkedin.com/in/nancy-arya-57176b201" target="_blank" rel="noopener" style="font-size: 0.85rem; padding: 4px 10px; background: var(--color-gray-100); border-radius: 20px; color: var(--color-gray-600);">LinkedIn</a>
+          
+        </div>
+        
+      </div>
+      
+      
+      
+      
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-label">Research Staff</h2>
+    <div class="people-grid">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="person-card">
+        
+        <div class="person-avatar" style="background-image: url('/img/people/Sharon.png'); background-size: cover; background-position: center; color: transparent;">.</div>
+        
+        <p class="person-name">Sharon Li (李品萱)</p>
+        <p class="person-title">Research Assistant</p>
+        
+        
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
+
+<section class="section-alt" style="text-align: center; padding: 40px 0;">
+  <div class="container">
+    <h3>Alumni &amp; Former Members</h3>
+    <p style="color: var(--color-gray-600);">Explore the careers and contributions of past lab members</p>
+    <a href="/alumni/" class="btn btn-primary" style="margin-top: var(--spacing-md);">View Alumni →</a>
+  </div>
+</section>
+
+  <footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      
+      <div class="footer-section">
+        <h3>CMJM Lab</h3>
+        <p>Computational Multidata Junction in Medicine</p>
+        <p>National Taiwan University</p>
+        <p style="font-size: 0.85rem; margin-top: var(--spacing-md);">Advancing computational research in medical data integration and analysis.</p>
+      </div>
+
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          
+          <li><a href="/">Home</a></li>
+          
+          <li><a href="/research/">Research</a></li>
+          
+          <li><a href="/people/">People</a></li>
+          
+          <li><a href="/publications/">Publications</a></li>
+          
+          <li><a href="/software/">Software</a></li>
+          
+          <li><a href="/news/">News</a></li>
+          
+          <li><a href="/join/">Join Us</a></li>
+          
+          <li><a href="/contact/">Contact</a></li>
+          
+        </ul>
+      </div>
+
+      
+      <div class="footer-section">
+        <h3>Contact</h3>
+        
+        <p>
+          <a href="mailto:mjmchen@g.ntu.edu.tw" style="color: rgba(255, 255, 255, 0.7);">
+            mjmchen@g.ntu.edu.tw
+          </a>
+        </p>
+        
+        <div class="footer-social">
+          
+          <a href="https://github.com/https://github.com/CMJM-Lab" title="GitHub" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          
+          
+          <a href="https://scholar.google.com/citations?user=https%3a%2f%2fscholar.google.com%2fcitations%3fuser%3dB9Dm9FkAAAAJ%26hl%3den" title="Google Scholar" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 3c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm6 12.5c0-2.485-2.686-4.5-6-4.5s-6 2.015-6 4.5V18h12v-2.5z"/>
+            </svg>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 CMJM Lab, National Taiwan University. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

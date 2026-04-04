@@ -1,0 +1,31 @@
+- title: "Postdoctoral Researcher"
+  status: "Open"
+  description: "Motivated postdocs with experience in bioinformatics, computational biology, or related fields."
+  requirements:
+    - "PhD in bioinformatics, CS, or related field"
+    - "Experience with multi-omics data analysis"
+    - "Strong programming skills (Python/R)"
+
+- title: "PhD Student"
+  status: "Open"
+  description: "PhD candidates interested in computational medicine, AI in healthcare, or multi-omics integration."
+  requirements:
+    - "MS degree in a relevant field"
+    - "Interest in precision medicine"
+    - "Computational skills preferred"
+
+- title: "Master's Student"
+  status: "Open"
+  description: "Students in the Smart Medicine and Health Informatics program interested in bioinformatics research."
+  requirements:
+    - "Background in CS, biology, or medicine"
+    - "Eager to learn bioinformatics"
+    - "English proficiency"
+
+- title: "Research Assistant"
+  status: "Open"
+  description: "RAs to support ongoing research projects in computational biology and data analysis."
+  requirements:
+    - "BS/MS in relevant field"
+    - "Programming experience"
+    - "Detail-oriented and collaborative"

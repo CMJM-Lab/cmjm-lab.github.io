@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on CMJM Lab</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on CMJM Lab</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dr. Mei-Ju May Chen</title>
+      <link>http://localhost:1313/people/mei-ju-may-chen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/people/mei-ju-may-chen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shongwe Njabulo Sinethemba</title>
+      <link>http://localhost:1313/people/njabulo-sinethemba/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/people/njabulo-sinethemba/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gustavo Castro-Wu (吳萬成)</title>
+      <link>http://localhost:1313/people/gustavo-castro-wu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/people/gustavo-castro-wu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nancy Arya</title>
+      <link>http://localhost:1313/people/nancy-arya/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/people/nancy-arya/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sharon Li (李品萱)</title>
+      <link>http://localhost:1313/people/sharon-li/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/people/sharon-li/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NSTC AI Project Funded!</title>
+      <link>http://localhost:1313/news/2025-12-nstc-funded/</link>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/2025-12-nstc-funded/</guid>
+      <description>&lt;p&gt;We are excited to announce that our AI research project has been funded by the National Science and Technology Council (NSTC). This funding will support our continued work in artificial intelligence applications for biomedical research.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lab website launched!</title>
+      <link>http://localhost:1313/news/2025-08-website-launched/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/2025-08-website-launched/</guid>
+      <description>&lt;p&gt;Welcome to the new CMJM Lab website! We have launched our updated website with information about our research, publications, and team members. Visit us to learn more about our work in computational biology and precision medicine.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New publication in Blood Cancer Discov.</title>
+      <link>http://localhost:1313/news/2025-07-blood-cancer-discovery/</link>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/2025-07-blood-cancer-discovery/</guid>
+      <description>&lt;p&gt;We are pleased to announce our new publication in Blood Cancer Discovery. This work continues our efforts to advance understanding of cancer biology through computational approaches.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New publication in Science Advances.</title>
+      <link>http://localhost:1313/news/2025-02-science-advances/</link>
+      <pubDate>Wed, 19 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/2025-02-science-advances/</guid>
+      <description>&lt;p&gt;Our latest research has been published in Science Advances. This publication highlights our contributions to the field of multi-omics analysis and precision medicine.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Join Smart Medicine and Health Informatics Master&#39;s Program in National Taiwan University.</title>
+      <link>http://localhost:1313/news/2025-02-masters-program/</link>
+      <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/2025-02-masters-program/</guid>
+      <description>&lt;p&gt;The Smart Medicine and Health Informatics Master&amp;rsquo;s Program at National Taiwan University is now accepting applications. This program offers an excellent opportunity to pursue advanced studies in bioinformatics, computational medicine, and precision health. We welcome motivated students to join our lab and contribute to cutting-edge research.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

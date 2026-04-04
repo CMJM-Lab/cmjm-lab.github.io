@@ -1,0 +1,17 @@
+- title: "GFF3toolkit"
+  icon: "⚙️"
+  description: "Automated quality control and merging pipeline for genome annotation. Ranked 3rd among 38 GFF3-related tools (top 8%). Used by 9+ research teams worldwide."
+  meta: ["★ 75 stars on GitHub", "Python"]
+  url: "https://github.com/NAL-i5K/GFF3toolkit"
+
+- title: "DrBioRight"
+  icon: "🤖"
+  description: "The world's first NLP-oriented, AI-driven biomedical data analysis platform. Published in Cancer Cell (2021)."
+  meta: ["AI / NLP", "Cancer Cell 2021"]
+  url: "#"
+
+- title: "TCPA v3.0"
+  icon: "📊"
+  description: "An integrative platform to explore the pan-cancer analysis of functional proteomic data (RPPA). Published in Molecular & Cellular Proteomics."
+  meta: ["Proteomics", "Web Platform"]
+  url: "#"

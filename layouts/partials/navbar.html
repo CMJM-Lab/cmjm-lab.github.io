@@ -1,0 +1,54 @@
+<nav class="site-nav">
+  <div class="container">
+    <div class="navbar">
+      <a href="{{ .Site.BaseURL }}" class="navbar-brand">
+        <span class="navbar-dot"></span>
+        <span class="navbar-text">
+          <span class="navbar-text-red">C</span><span class="navbar-text-red">M</span><span class="navbar-text-red">J</span><span class="navbar-text-red">M</span><span class="navbar-text-white"> Lab</span>
+        </span>
+      </a>
+
+      <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+
+      <ul class="navbar-menu" id="navbar-menu">
+        {{ range .Site.Menus.main }}
+        <li class="navbar-item {{ if eq .URL ($.Page.RelPermalink) }}active{{ end }}">
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Mobile navbar toggle functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.getElementById('navbar-toggle');
+    const menu = document.getElementById('navbar-menu');
+
+    if (toggle && menu) {
+      toggle.addEventListener('click', function() {
+        menu.classList.toggle('active');
+      });
+
+      // Close menu when a link is clicked
+      const menuLinks = menu.querySelectorAll('a');
+      menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          menu.classList.remove('active');
+        });
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        const isClickInsideNav = toggle.contains(event.target) || menu.contains(event.target);
+        if (!isClickInsideNav && menu.classList.contains('active')) {
+          menu.classList.remove('active');
+        }
+      });
+    }
+  });
+</script>

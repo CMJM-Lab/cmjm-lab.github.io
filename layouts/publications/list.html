@@ -1,0 +1,115 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Publications</h1>
+      <p>Research output from CMJM Lab</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="publication-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="first-author">First Author</button>
+      <button class="filter-btn" data-filter="collaborative">Collaborative</button>
+      <button class="filter-btn" data-filter="book-chapters">Book Chapters</button>
+    </div>
+
+    <div class="publication-list" id="publications-list">
+      {{ if hugo.Data.publications_leading }}
+      <div class="publication-section" data-type="first-author">
+        <h3 style="color: var(--color-teal-dark); margin-bottom: var(--spacing-md);">Leading Author Publications</h3>
+        {{ range hugo.Data.publications_leading }}
+        <div class="publication-item">
+          {{ if .year }}<span class="publication-year">{{ .year }}</span>{{ end }}
+          <div class="publication-info">
+            <h4 class="publication-title">{{ .title }}</h4>
+            {{ if .authors }}<p class="publication-authors">{{ replace .authors "Chen MJM" "<strong>Chen MJM</strong>" | safeHTML }}</p>{{ end }}
+            {{ if .author }}<p class="publication-authors"><strong>{{ .author }}</strong></p>{{ end }}
+            {{ if .journal }}<p class="publication-journal"><em>{{ .journal }}</em>{{ with .volume_issue }}, {{ . }}{{ end }}</p>{{ end }}
+            {{ if .doi }}<a href="https://doi.org/{{ .doi }}" class="publication-doi" target="_blank" rel="noopener">DOI ↗</a>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{ if hugo.Data.publications_coauthor }}
+      <div class="publication-section" data-type="collaborative">
+        <h3 style="color: var(--color-teal-dark); margin-bottom: var(--spacing-md); margin-top: var(--spacing-2xl);">Collaborative Publications</h3>
+        {{ range hugo.Data.publications_coauthor }}
+        <div class="publication-item">
+          {{ if .year }}<span class="publication-year">{{ .year }}</span>{{ end }}
+          <div class="publication-info">
+            <h4 class="publication-title">{{ .title }}</h4>
+            {{ if .authors }}<p class="publication-authors">{{ replace .authors "Chen MJM" "<strong>Chen MJM</strong>" | safeHTML }}</p>{{ end }}
+            {{ if .journal }}<p class="publication-journal"><em>{{ .journal }}</em>{{ with .volume_issue }}, {{ . }}{{ end }}</p>{{ end }}
+            {{ if .doi }}<a href="https://doi.org/{{ .doi }}" class="publication-doi" target="_blank" rel="noopener">DOI ↗</a>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{ if hugo.Data.publications_books }}
+      <div class="publication-section" data-type="book-chapters">
+        <h3 style="color: var(--color-teal-dark); margin-bottom: var(--spacing-md); margin-top: var(--spacing-2xl);">Book Chapters</h3>
+        {{ range hugo.Data.publications_books }}
+        <div class="publication-item">
+          {{ if .year }}<span class="publication-year">{{ .year }}</span>{{ end }}
+          <div class="publication-info">
+            <h4 class="publication-title">{{ .title }}</h4>
+            {{ if .authors }}<p class="publication-authors">{{ replace .authors "Chen MJM" "<strong>Chen MJM</strong>" | safeHTML }}</p>{{ end }}
+            {{ if .book }}<p class="publication-journal">In: <em>{{ .book }}</em>{{ with .pages }}, pp. {{ . }}{{ end }}</p>{{ end }}
+            {{ if .doi }}<a href="https://doi.org/{{ .doi }}" class="publication-doi" target="_blank" rel="noopener">DOI ↗</a>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{ if hugo.Data.publications_theses }}
+      <div class="publication-section">
+        <h3 style="color: var(--color-teal-dark); margin-bottom: var(--spacing-md); margin-top: var(--spacing-2xl);">Theses &amp; Dissertations</h3>
+        {{ range hugo.Data.publications_theses }}
+        <div class="publication-item">
+          {{ if .year }}<span class="publication-year">{{ .year }}</span>{{ end }}
+          <div class="publication-info">
+            <h4 class="publication-title">{{ .title }}</h4>
+            {{ if .author }}<p class="publication-authors"><strong>{{ .author }}</strong></p>{{ end }}
+            <p class="publication-journal">{{ .type }} thesis, {{ .institution }}</p>
+            {{ if .doi }}<a href="https://doi.org/{{ .doi }}" class="publication-doi" target="_blank" rel="noopener">DOI ↗</a>{{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const sections = document.querySelectorAll('.publication-section');
+
+  filterBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      filterBtns.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+
+      var filter = btn.getAttribute('data-filter');
+      sections.forEach(function(section) {
+        if (filter === 'all' || section.getAttribute('data-type') === filter) {
+          section.style.display = '';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
+{{ end }}

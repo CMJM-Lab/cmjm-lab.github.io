@@ -1,0 +1,104 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>People</h1>
+      <p>Meet our diverse, international team</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-label">Principal Investigator</h2>
+    {{ range where .Pages "Params.role" "Principal Investigator" }}
+    <div class="featured-pi">
+      {{ if .Params.image }}
+      <div class="featured-pi-avatar" style="background-image: url('{{ .Params.image }}'); background-size: cover; background-position: center;"></div>
+      {{ else }}
+      <div class="featured-pi-avatar">{{ substr .Title 0 2 }}</div>
+      {{ end }}
+      <div class="featured-pi-content">
+        <h2>{{ .Title }}</h2>
+        <p class="featured-pi-title">{{ .Params.role }}</p>
+        {{ with .Params.affiliation }}<p style="color: var(--color-gray-600);">{{ . }}</p>{{ end }}
+        {{ with .Params.intro }}<p>{{ . }}</p>{{ end }}
+        {{ with .Params.links }}
+        <div style="display: flex; gap: 8px; margin-top: var(--spacing-md); flex-wrap: wrap;">
+          {{ range . }}
+          <a href="{{ .url }}" class="btn btn-outline" target="_blank" rel="noopener" style="font-size: 0.85rem; padding: 6px 16px;">{{ .title }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <h2 class="section-label">Graduate Students</h2>
+    <div class="people-grid">
+      {{ range sort .Pages "Params.weight" }}
+      {{ if in .Params.role "Student" }}
+      <div class="person-card">
+        {{ if .Params.image }}
+        <div class="person-avatar" style="background-image: url('{{ .Params.image }}'); background-size: cover; background-position: center; color: transparent;">.</div>
+        {{ else }}
+        <div class="person-avatar">{{ substr .Title 0 2 }}</div>
+        {{ end }}
+        <p class="person-name">{{ .Title }}</p>
+        <p class="person-title">{{ .Params.role }}</p>
+        {{ with .Params.intro }}<p class="person-bio">{{ . }}</p>{{ end }}
+        {{ with .Params.links }}
+        <div style="margin-top: var(--spacing-sm); display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+          {{ range . }}
+          <a href="{{ .url }}" target="_blank" rel="noopener" style="font-size: 0.85rem; padding: 4px 10px; background: var(--color-gray-100); border-radius: 20px; color: var(--color-gray-600);">{{ .title }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-label">Research Staff</h2>
+    <div class="people-grid">
+      {{ range sort .Pages "Params.weight" }}
+      {{ if or (in .Params.role "Assistant") (in .Params.role "Staff") }}
+      <div class="person-card">
+        {{ if .Params.image }}
+        <div class="person-avatar" style="background-image: url('{{ .Params.image }}'); background-size: cover; background-position: center; color: transparent;">.</div>
+        {{ else }}
+        <div class="person-avatar">{{ substr .Title 0 2 }}</div>
+        {{ end }}
+        <p class="person-name">{{ .Title }}</p>
+        <p class="person-title">{{ .Params.role }}</p>
+        {{ with .Params.intro }}<p class="person-bio">{{ . }}</p>{{ end }}
+        {{ with .Params.links }}
+        <div style="margin-top: var(--spacing-sm); display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+          {{ range . }}
+          <a href="{{ .url }}" target="_blank" rel="noopener" style="font-size: 0.85rem; padding: 4px 10px; background: var(--color-gray-100); border-radius: 20px; color: var(--color-gray-600);">{{ .title }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section-alt" style="text-align: center; padding: 40px 0;">
+  <div class="container">
+    <h3>Alumni &amp; Former Members</h3>
+    <p style="color: var(--color-gray-600);">Explore the careers and contributions of past lab members</p>
+    <a href="/alumni/" class="btn btn-primary" style="margin-top: var(--spacing-md);">View Alumni →</a>
+  </div>
+</section>
+{{ end }}

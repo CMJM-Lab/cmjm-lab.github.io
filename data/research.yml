@@ -1,0 +1,14 @@
+- title: "Biomarker Identification"
+  image: "/img/research/biomarker.png"
+  description: "Dr. Chen and colleagues discovered a new mechanism of tumor response to immunotherapy mediated by SIRPα, highlighting the importance of deeply understanding the complexity of tumor cells and their microenvironment interactions in the development of new immunotherapies. This study was published in Cancer Cell (2022) and was selected as one of the important papers of the year by MD Anderson Cancer Center."
+  tags: ["Immuno-oncology", "Tumor Microenvironment", "Precision Medicine"]
+
+- title: "AI Application"
+  image: "/img/research/ai.png"
+  description: "Dr. Chen and colleagues developed DrBioRight (Cancer Cell, 2021), the world's first natural language-oriented, AI-driven biomedical data analysis platform. It demonstrated the potential of AI to transform cancer research by easing the analytical load on biologists and bioinformaticians. The success of this work was interviewed and reported by the MD Anderson Newsroom on the MD Anderson Cancer Center website."
+  tags: ["AI", "NLP", "Biomedical Data Analysis"]
+
+- title: "Bioinformatics Tool Development"
+  image: "/img/research/tool.png"
+  description: "Dr. Chen was the main developer of the genomic analysis tool, GFF3toolkit, which automates the process of quality control for gene annotation and integrates it into an official gene set for subsequent paper publication, applicable to various genomes. In addition to writing the GFF3toolkit protocol published in the Methods in Molecular Biology series by Springer Nature (Insect Genomics, 2019), Dr. Chen also assisted i5K WorkSpace@NAL and nine insect research teams in widely applying GFF3toolkit to their insect genome research. This tool currently has 75 stars on Github and ranks 3rd among 38 GFF3-related tools (top 8%)."
+  tags: ["Genome Annotation", "Quality Control", "Bioinformatics Tools"]

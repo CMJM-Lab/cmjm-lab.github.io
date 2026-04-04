@@ -1,0 +1,39 @@
+{{ define "main" }}
+<section class="join-hero">
+  <div class="container">
+    <h2>Join Our Team</h2>
+    <p>We're building an interdisciplinary, international environment focused on advancing precision medicine through computational science</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="text-center">Open Positions</h2>
+    <div class="position-cards">
+      {{ range hugo.Data.positions }}
+      <div class="position-card">
+        <h3>{{ .title }}</h3>
+        <span class="position-type">{{ .status }}</span>
+        <p>{{ .description }}</p>
+        {{ if .requirements }}
+        <p style="margin-top: var(--spacing-md);"><strong>Requirements:</strong></p>
+        <ul style="margin-left: var(--spacing-lg); color: var(--color-muted); font-size: var(--font-size-sm);">
+          {{ range .requirements }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container text-center">
+    <h2>Interested?</h2>
+    <p style="margin-bottom: var(--spacing-lg);">Please reach out with your CV, research interests, and any questions you have.</p>
+    <a href="mailto:info@cmjm-lab.org" class="btn btn-primary">Get in Touch →</a>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container" style="max-width: 800px;">
+    <article>
+      <div style="margin-bottom: var(--spacing-xl);">
+        <span class="news-date">{{ .Date.Format "January 2, 2006" }}</span>
+        <h1 style="margin-top: var(--spacing-md);">{{ .Title }}</h1>
+      </div>
+
+      {{ if .Params.featured_image }}
+      <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: var(--spacing-xl);">
+      {{ end }}
+
+      <div class="prose" style="line-height: var(--line-height-relaxed);">
+        {{ .Content }}
+      </div>
+
+      {{ if .Params.tags }}
+      <div style="margin-top: var(--spacing-xl); padding-top: var(--spacing-xl); border-top: 1px solid var(--color-border);">
+        <p><strong>Tags:</strong></p>
+        <div>
+          {{ range .Params.tags }}
+          <span class="tag">{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      <div style="margin-top: var(--spacing-2xl); padding-top: var(--spacing-xl); border-top: 1px solid var(--color-border); text-align: center;">
+        <a href="/news/" class="btn btn-outline">Back to News →</a>
+      </div>
+    </article>
+  </div>
+</section>
+{{ end }}
