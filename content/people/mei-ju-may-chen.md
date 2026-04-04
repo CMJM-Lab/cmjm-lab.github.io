@@ -1,7 +1,7 @@
 ---
 title: "Dr. Mei-Ju May Chen"
 role: "Principal Investigator"
-affiliation: "Assistant Professor, Smart Medicine and Health Informatics Master's Program, National Taiwan University"
+affiliation: "Assistant Professor, Master's Program in Smart Medicine and Health Informatics, National Taiwan University"
 image: "/img/people/MJMC.png"
 intro: "Dr. Chen leads the CMJM Lab, focusing on bioinformatics and precision medicine."
 weight: 1
