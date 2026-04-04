@@ -17,13 +17,13 @@
         <h3>{{ .name }}</h3>
         <p>{{ .description }}</p>
         {{ if or .stars .language }}
-        <div style="margin-top: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--color-border); font-size: var(--font-size-sm); color: var(--color-muted);">
-          {{ if .stars }}<p>Stars: ⭐ {{ .stars }}</p>{{ end }}
-          {{ if .language }}<p>Language: <span class="tag">{{ .language }}</span></p>{{ end }}
+        <div class="software-meta">
+          {{ if .stars }}<span aria-label="{{ .stars }} stars on GitHub"><span aria-hidden="true">⭐</span> {{ .stars }} stars</span>{{ end }}
+          {{ if .language }}<span class="tag">{{ .language }}</span>{{ end }}
         </div>
         {{ end }}
         {{ if .url }}
-        <a href="{{ .url }}" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top: var(--spacing-md); width: 100%; text-align: center;">View on GitHub →</a>
+        <a href="{{ .url }}" target="_blank" rel="noopener" class="btn btn-outline software-btn">View Project →</a>
         {{ end }}
       </div>
       {{ end }}
@@ -35,7 +35,7 @@
   <div class="container text-center">
     <h2>Contributing</h2>
     <p>We welcome contributions from the community. Check out our repositories on GitHub to get involved.</p>
-    <a href="https://github.com/cmjm-lab" target="_blank" rel="noopener" class="btn btn-primary">Visit Our GitHub →</a>
+    <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener" class="btn btn-primary">Visit Our GitHub →</a>
   </div>
 </section>
 {{ end }}

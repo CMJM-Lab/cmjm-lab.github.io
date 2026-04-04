@@ -13,21 +13,25 @@
 
     {{ if .Pages }}
     <div class="mt-4">
-      <ul class="list" style="list-style: none; padding: 0; margin: 0;">
+      <ul class="default-page-list">
         {{ range .Pages }}
-        <li style="margin-bottom: 1.5rem;">
-          <a href="{{ .Permalink }}" style="font-weight: 700; font-size: 1.125rem;">{{ .Title }}</a>
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
           {{ if .Date }}
-          <div style="color: var(--color-muted); font-size: 0.875rem; margin-top: 0.25rem;">
-            {{ .Date.Format "January 2, 2006" }}
+          <div class="text-muted mt-1">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
           </div>
           {{ end }}
           {{ if .Summary }}
-          <p style="margin-top: 0.5rem; color: var(--color-muted);">{{ .Summary }}</p>
+          <p class="text-muted mt-1">{{ .Summary }}</p>
           {{ end }}
         </li>
         {{ end }}
       </ul>
+    </div>
+    {{ else }}
+    <div class="empty-state">
+      <p>No content available yet.</p>
     </div>
     {{ end }}
   </section>

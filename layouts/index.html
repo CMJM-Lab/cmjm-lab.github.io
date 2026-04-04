@@ -3,7 +3,7 @@
   <div class="container">
     <div class="hero-content">
       <h1>
-        <em>C</em>omputational <em>M</em>ultidata <em>J</em>unction in <em>M</em>edicine
+        <span class="accent-orange">C</span>omputational <span class="accent-orange">M</span>ultidata <span class="accent-orange">J</span>unction in <span class="accent-orange">M</span>edicine
       </h1>
       <p>Advancing precision medicine through integrated data science and computational analysis</p>
       <div class="flex gap-2 justify-center">
@@ -13,8 +13,8 @@
     </div>
   </div>
   <div class="container mt-4">
-    <div class="hero-visual" style="background-color: #f0f2f5; height: 300px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #6c757d;">
-      <img src="/img/home/summary.png" alt="Lab Summary" style="max-width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+    <div class="hero-visual">
+      <img src="/img/home/summary.png" alt="CMJM Lab — Computational Multidata Junction in Medicine at National Taiwan University" loading="lazy">
     </div>
   </div>
 </section>
@@ -23,19 +23,19 @@
   <div class="container">
     <div class="stats-container">
       <div class="stat">
-        <span class="stat-number">25+</span>
+        <span class="stat-number">{{ add (len hugo.Data.publications_leading) (len hugo.Data.publications_coauthor) }}+</span>
         <span class="stat-label">Publications</span>
       </div>
       <div class="stat">
-        <span class="stat-number">3</span>
+        <span class="stat-number">{{ len hugo.Data.research }}</span>
         <span class="stat-label">Research Areas</span>
       </div>
       <div class="stat">
-        <span class="stat-number">10+</span>
+        <span class="stat-number">{{ len (where .Site.RegularPages "Section" "people") }}+</span>
         <span class="stat-label">Team Members</span>
       </div>
       <div class="stat">
-        <span class="stat-number">3</span>
+        <span class="stat-number">{{ len hugo.Data.software }}</span>
         <span class="stat-label">Open-Source Tools</span>
       </div>
     </div>
@@ -74,7 +74,7 @@
       {{ range first 3 (sort $newsPages "Date" "desc") }}
       <article class="news-card">
         <div class="news-content">
-          <span class="news-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+          <time datetime="{{ .Date.Format "2006-01-02" }}" class="news-date">{{ .Date.Format "Jan 2, 2006" }}</time>
           <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
           <p>{{ .Summary }}</p>
           <a href="{{ .Permalink }}" class="news-link">Read More →</a>
@@ -82,15 +82,9 @@
       </article>
       {{ end }}
     </div>
-    <div style="text-align: center; margin-top: var(--spacing-lg);">
+    <div class="text-center mt-4">
       <a href="/news/" class="btn btn-outline">View All News →</a>
     </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    {{ .Content }}
   </div>
 </section>
 {{ end }}

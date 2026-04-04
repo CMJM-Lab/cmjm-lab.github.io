@@ -83,10 +83,10 @@
   doi: "10.1038/s41598-018-20154-1"
 
 - title: "Improved annotation of the insect vector of citrus greening disease: biocuration by a diverse genomics community"
-  authors: "Saha S*, Hosmani PS*, Villalobos-Ayala K, Miller S, Shippy T, Flores M, Rosendale A, Cordola C, Bell T, Mann H, DeAvila G, DeAvila D, Moore Z, Buller K, Ciolkevich K, Nandyal S, Mahoney R, Voorhis JV, Dunlevy M, Farrow D, Hunter D, Morgan T, Shore K, Guzman V, Izsak A, Dixon DE, Cridge A, Cano L, Cao X, Jiang H, Leng N, Johnson S, Cantarel BL, Richards S, English A, Shatters RG, Childers C, Chen MJ, Hunter W, Cilia M, Mueller LA, Munoz-Torres M, Nelson D, Poelchau MF, Benoit JB, Wiersma-Koch H, D'Elia T, Brown SJ"
+  authors: "Saha S*, Hosmani PS*, Villalobos-Ayala K, Miller S, Shippy T, Flores M, Rosendale A, Cordola C, Bell T, Mann H, DeAvila G, DeAvila D, Moore Z, Buller K, Ciolkevich K, Nandyal S, Mahoney R, Voorhis JV, Dunlevy M, Farrow D, Hunter D, Morgan T, Shore K, Guzman V, Izsak A, Dixon DE, Cridge A, Cano L, Cao X, Jiang H, Leng N, Johnson S, Cantarel BL, Richards S, English A, Shatters RG, Childers C, Chen MJM, Hunter W, Cilia M, Mueller LA, Munoz-Torres M, Nelson D, Poelchau MF, Benoit JB, Wiersma-Koch H, D'Elia T, Brown SJ"
   journal: "Database"
   year: 2017
-  volume_issue: "2017, 1–20"
+  volume_issue: "2017, 1-20"
   doi: "10.1093/database/bax032"
 
 - title: "Aiolos collaborates with Blimp-1 to regulate the survival of multiple myeloma cells"
@@ -110,8 +110,8 @@
   volume_issue: "24(3): 338-347"
   doi: "10.1111/imb.12161"
 
-- title: "Intellectual disability‐associated dBRWD3 regulates gene expression through inhibition of HIRA/YEM‐mediated chromatin deposition of histone H3. 3"
-  authors: "Chen WY, Shih HT, Liu KY, Shih ZS, Chen LK, Tsai TH, Chen MJ, Liu H, Tan BCM, Chen CY, Lee HH, Loppin B, Aït‐Ahmed O, Wu JT*"
+- title: "Intellectual disability-associated dBRWD3 regulates gene expression through inhibition of HIRA/YEM-mediated chromatin deposition of histone H3.3"
+  authors: "Chen WY, Shih HT, Liu KY, Shih ZS, Chen LK, Tsai TH, Chen MJM, Liu H, Tan BCM, Chen CY, Lee HH, Loppin B, Ait-Ahmed O, Wu JT*"
   journal: "EMBO Reports"
   year: 2015
   volume_issue: "16 (4), 528-538"

@@ -1,0 +1,27 @@
+{{- /*
+  Email obfuscation partial — charcode-based JS protection.
+  Usage: {{ partial "email-protect" (dict "email" .Site.Params.email "class" "optional-css-class" "label" "optional-link-text") }}
+  - If "label" is provided: the label text is shown immediately; JS fills in mailto href.
+  - If "label" is omitted: the span starts empty and JS renders the email link.
+  - Email is encoded as character codes — no plain-text fragments in source.
+*/ -}}
+{{- $email := .email -}}
+{{- $id := printf "ep-%s" (substr (md5 (printf "%s%s" $email (now.UnixNano))) 0 8) -}}
+{{- $class := .class | default "" -}}
+{{- $label := .label | default "" -}}
+{{- /* Build char code array from email string */ -}}
+{{- $codes := slice -}}
+{{- range split $email "" -}}
+  {{- $codes = $codes | append (index . 0) -}}
+{{- end -}}
+{{- if $label -}}
+<a href="#" id="{{ $id }}" {{ if $class }}class="{{ $class }}"{{ end }}>{{ $label }}</a>
+<script>
+(function(){var c=[{{ delimit $codes "," | safeJS }}],s='';for(var i=0;i<c.length;i++)s+=String.fromCharCode(c[i]);document.getElementById('{{ $id }}').href='ma'+'il'+'to:'+s;})();
+</script>
+{{- else -}}
+<span id="{{ $id }}" {{ if $class }}class="{{ $class }}"{{ end }}></span>
+<script>
+(function(){var c=[{{ delimit $codes "," | safeJS }}],s='';for(var i=0;i<c.length;i++)s+=String.fromCharCode(c[i]);var a=document.createElement('a');a.href='ma'+'il'+'to:'+s;a.textContent=s;document.getElementById('{{ $id }}').appendChild(a);})();
+</script>
+{{- end -}}

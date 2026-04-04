@@ -8,13 +8,13 @@
         </span>
       </a>
 
-      <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+      <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbar-menu">
         &#9776;
       </button>
 
-      <ul class="navbar-menu" id="navbar-menu">
+      <ul class="navbar-menu" id="navbar-menu" role="navigation">
         {{ range .Site.Menus.main }}
-        <li class="navbar-item {{ if eq .URL ($.Page.RelPermalink) }}active{{ end }}">
+        <li class="navbar-item {{ if or (eq .URL $.Page.RelPermalink) (and (ne .URL "/") (hasPrefix $.Page.RelPermalink .URL)) }}active{{ end }}">
           <a href="{{ .URL }}">{{ .Name }}</a>
         </li>
         {{ end }}
@@ -32,6 +32,8 @@
     if (toggle && menu) {
       toggle.addEventListener('click', function() {
         menu.classList.toggle('active');
+        var expanded = menu.classList.contains('active');
+        toggle.setAttribute('aria-expanded', expanded);
       });
 
       // Close menu when a link is clicked

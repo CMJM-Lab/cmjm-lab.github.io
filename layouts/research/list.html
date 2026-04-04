@@ -5,21 +5,23 @@
       <h1>Research</h1>
       <p>Exploring computational approaches to multidata analysis in medicine</p>
     </div>
+    <div class="text-center mt-4">
+      <img src="/img/research/overview.png" alt="CMJM Lab Research Overview — AI-driven Multiomics Integration, Translational Medicine, Interdisciplinary Education, International Cooperation, Nextflow and Infrastructure, Tumor Heterogeneity Studies, and Academia-Industry collaboration" loading="lazy" class="featured-image" style="box-shadow: var(--shadow-md); display: inline-block;" />
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
     {{ range $index, $item := hugo.Data.research }}
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); align-items: center; margin-bottom: var(--spacing-2xl);">
+    <div class="research-detail-grid">
       {{ if eq (mod $index 2) 0 }}
-      <!-- Image on the left for even index -->
-      <div {{ if $item.image }}style="background-image: url('{{ $item.image }}'); background-size: cover; background-position: center; height: 300px; border-radius: 8px;"{{ else }}style="background-color: var(--color-orange); height: 300px; border-radius: 8px;"{{ end }}></div>
+      <div class="research-detail-image" {{ if $item.image }}style="background-image: url('{{ $item.image }}');"{{ end }}></div>
       <div>
-        <h2 style="color: var(--color-teal-dark);">{{ $item.title }}</h2>
+        <h2 class="section-label">{{ $item.title }}</h2>
         <p>{{ $item.description }}</p>
         {{ if $item.tags }}
-        <div style="margin-top: var(--spacing-md);">
+        <div class="mt-2">
           {{ range $item.tags }}
           <span class="tag">{{ . }}</span>
           {{ end }}
@@ -27,19 +29,18 @@
         {{ end }}
       </div>
       {{ else }}
-      <!-- Image on the right for odd index -->
       <div>
-        <h2 style="color: var(--color-teal-dark);">{{ $item.title }}</h2>
+        <h2 class="section-label">{{ $item.title }}</h2>
         <p>{{ $item.description }}</p>
         {{ if $item.tags }}
-        <div style="margin-top: var(--spacing-md);">
+        <div class="mt-2">
           {{ range $item.tags }}
           <span class="tag">{{ . }}</span>
           {{ end }}
         </div>
         {{ end }}
       </div>
-      <div {{ if $item.image }}style="background-image: url('{{ $item.image }}'); background-size: cover; background-position: center; height: 300px; border-radius: 8px;"{{ else }}style="background-color: var(--color-teal); height: 300px; border-radius: 8px;"{{ end }}></div>
+      <div class="research-detail-image" {{ if $item.image }}style="background-image: url('{{ $item.image }}');"{{ end }}></div>
       {{ end }}
     </div>
     {{ end }}

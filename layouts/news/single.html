@@ -1,22 +1,22 @@
 {{ define "main" }}
 <section class="section">
-  <div class="container" style="max-width: 800px;">
+  <div class="container article-container">
     <article>
-      <div style="margin-bottom: var(--spacing-xl);">
-        <span class="news-date">{{ .Date.Format "January 2, 2006" }}</span>
-        <h1 style="margin-top: var(--spacing-md);">{{ .Title }}</h1>
-      </div>
+      <header class="mb-4">
+        <time datetime="{{ .Date.Format "2006-01-02" }}" class="news-date">{{ .Date.Format "Jan 2, 2006" }}</time>
+        <h1 class="mt-2">{{ .Title }}</h1>
+      </header>
 
       {{ if .Params.featured_image }}
-      <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: var(--spacing-xl);">
+      <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" loading="lazy" class="featured-image">
       {{ end }}
 
-      <div class="prose" style="line-height: var(--line-height-relaxed);">
+      <div class="prose">
         {{ .Content }}
       </div>
 
       {{ if .Params.tags }}
-      <div style="margin-top: var(--spacing-xl); padding-top: var(--spacing-xl); border-top: 1px solid var(--color-border);">
+      <div class="tags-section">
         <p><strong>Tags:</strong></p>
         <div>
           {{ range .Params.tags }}
@@ -26,7 +26,7 @@
       </div>
       {{ end }}
 
-      <div style="margin-top: var(--spacing-2xl); padding-top: var(--spacing-xl); border-top: 1px solid var(--color-border); text-align: center;">
+      <div class="article-nav">
         <a href="/news/" class="btn btn-outline">Back to News →</a>
       </div>
     </article>

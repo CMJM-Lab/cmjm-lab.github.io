@@ -10,6 +10,7 @@
 
 <section class="section">
   <div class="container">
+    {{ if .Pages }}
     <div class="people-grid">
       {{ range .Pages }}
       <div class="card">
@@ -22,12 +23,18 @@
       </div>
       {{ end }}
     </div>
+    {{ else }}
+    <div class="empty-state">
+      <p>The CMJM Lab was established in 2025.</p>
+      <p>Alumni information will be updated as team members graduate and move on to new opportunities.</p>
+    </div>
+    {{ end }}
   </div>
 </section>
 
 <section class="section-alt">
   <div class="container text-center">
-    <p>We are proud of the contributions our alumni have made and the success they've achieved in their careers.</p>
+    <p>We are proud of the contributions our members make and the success they achieve in their careers.</p>
     <a href="/people/" class="btn btn-primary">Back to Team →</a>
   </div>
 </section>
