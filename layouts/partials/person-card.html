@@ -1,0 +1,26 @@
+{{/* Every slot is always rendered so rows line up across cards via CSS subgrid. */}}
+<div class="person-card">
+  <div class="person-avatar">
+    {{ if .Params.image }}
+    <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" class="avatar-image">
+    {{ else }}
+    {{ substr .Title 0 2 }}
+    {{ end }}
+  </div>
+  <p class="person-name">{{ .Title }}</p>
+  <p class="person-bio">{{ .Params.intro }}</p>
+  <p class="person-title">{{ .Params.role }}</p>
+  <div class="person-meta">
+    {{ with .Params.current_position }}<p>Now: {{ . }}</p>{{ end }}
+    {{ with .Params.years }}<p>{{ . }}</p>{{ end }}
+  </div>
+  {{ with .Params.links }}
+  <div class="person-links-row">
+    {{ range . }}
+    <a href="{{ .url }}" target="_blank" rel="noopener" class="person-link-pill">{{ .title }}</a>
+    {{ end }}
+  </div>
+  {{ else }}
+  <div></div>
+  {{ end }}
+</div>

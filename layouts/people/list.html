@@ -44,25 +44,7 @@
     <div class="people-grid">
       {{ range sort .Pages "Params.joined" }}
       {{ if in .Params.role "Student" }}
-      <div class="person-card">
-        <div class="person-avatar">
-          {{ if .Params.image }}
-          <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" class="avatar-image">
-          {{ else }}
-          {{ substr .Title 0 2 }}
-          {{ end }}
-        </div>
-        <p class="person-name">{{ .Title }}</p>
-        <p class="person-title">{{ .Params.role }}</p>
-        {{ with .Params.intro }}<p class="person-bio">{{ . }}</p>{{ end }}
-        {{ with .Params.links }}
-        <div class="person-links-row">
-          {{ range . }}
-          <a href="{{ .url }}" target="_blank" rel="noopener" class="person-link-pill">{{ .title }}</a>
-          {{ end }}
-        </div>
-        {{ end }}
-      </div>
+      {{ partial "person-card.html" . }}
       {{ end }}
       {{ end }}
     </div>
@@ -75,25 +57,7 @@
     <div class="people-grid">
       {{ range sort .Pages "Params.joined" }}
       {{ if or (in .Params.role "Assistant") (in .Params.role "Staff") }}
-      <div class="person-card">
-        <div class="person-avatar">
-          {{ if .Params.image }}
-          <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" class="avatar-image">
-          {{ else }}
-          {{ substr .Title 0 2 }}
-          {{ end }}
-        </div>
-        <p class="person-name">{{ .Title }}</p>
-        <p class="person-title">{{ .Params.role }}</p>
-        {{ with .Params.intro }}<p class="person-bio">{{ . }}</p>{{ end }}
-        {{ with .Params.links }}
-        <div class="person-links-row">
-          {{ range . }}
-          <a href="{{ .url }}" target="_blank" rel="noopener" class="person-link-pill">{{ .title }}</a>
-          {{ end }}
-        </div>
-        {{ end }}
-      </div>
+      {{ partial "person-card.html" . }}
       {{ end }}
       {{ end }}
     </div>
