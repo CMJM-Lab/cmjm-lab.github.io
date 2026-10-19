@@ -3,7 +3,7 @@ title: "Nancy Arya"
 role: "Master's Student"
 affiliation: "Master's Program in Smart Medicine and Health Informatics, National Taiwan University"
 image: "/img/people/nancy.png"
-intro: "Nancy is a Master's student in the CMJM Lab researching multiomics and machine learning applications in oncology."
+intro: "Nancy is a Master’s student researching intratumoral transcriptional heterogeneity in pan-cancer, investigating how EMT states and recurrent transcriptional programs shape cellular diversity and drug sensitivity."
 weight: 4
 links:
   - title: "GitHub"
