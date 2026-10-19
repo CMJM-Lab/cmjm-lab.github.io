@@ -2,7 +2,7 @@
 <section class="hero">
   <div class="container">
     <div class="hero-content">
-      <h1>Alumni</h1>
+      <h1>Alumni &amp; Former Members</h1>
       <p>Celebrating the achievements of our former team members</p>
     </div>
   </div>
@@ -12,15 +12,8 @@
   <div class="container">
     {{ if .Pages }}
     <div class="people-grid">
-      {{ range .Pages }}
-      <div class="card">
-        <div class="card-content">
-          <h3 class="card-title">{{ .Title }}</h3>
-          {{ if .Params.role }}<p><strong>Role:</strong> {{ .Params.role }}</p>{{ end }}
-          {{ if .Params.current_position }}<p><strong>Current Position:</strong> {{ .Params.current_position }}</p>{{ end }}
-          {{ if .Params.years }}<p class="text-muted">{{ .Params.years }}</p>{{ end }}
-        </div>
-      </div>
+      {{ range sort .Pages "Params.joined" }}
+      {{ partial "person-card.html" . }}
       {{ end }}
     </div>
     {{ else }}
