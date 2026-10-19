@@ -62,6 +62,7 @@ Create a file in `content/people/`:
 ---
 title: "Full Name"
 role: "Master's Student"  # or PhD Student, Postdoc, Research Assistant
+joined: "YYYY-MM-DD"  # lab entry date, used for ordering
 image: "/img/people/filename.jpg"
 intro: "Brief research description"
 links:

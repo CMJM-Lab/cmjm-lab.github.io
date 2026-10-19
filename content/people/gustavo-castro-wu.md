@@ -4,7 +4,7 @@ role: "Master's Student"
 affiliation: "Master's Program in Smart Medicine and Health Informatics, National Taiwan University"
 image: "/img/people/gustavo.jpg"
 intro: "Gustavo (吳萬成) is a Master's student in the CMJM Lab researching neoantigen prediction in NSCLC using scRNA-seq for the improvement of targeted immunotherapies."
-weight: 3
+joined: "2025-03-06"
 links:
   - title: "GitHub"
     url: "https://github.com/FortuneEXE"
